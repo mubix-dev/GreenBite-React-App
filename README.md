@@ -1,6 +1,6 @@
-# 🍔 WAMIX - Food Ordering Web App
+# 🍔 GreenBite - Food Ordering Web App
 
-WAMIX is a modern and responsive food ordering web application built using React. It allows users to browse food items, filter by categories, search items, and manage a shopping cart seamlessly.
+GreenBite is a modern and responsive food ordering web application built using React. It allows users to browse food items, filter by categories, search items, and manage a shopping cart seamlessly.
 
 ---
 
@@ -37,7 +37,7 @@ WAMIX is a modern and responsive food ordering web application built using React
 - Improved understanding of React hooks
 - State management with Redux Toolkit
 - Component-based architecture
--Building responsive UI with Tailwind CSS
+- Building responsive UI with Tailwind CSS
 
 ## 🙌 Author
 
