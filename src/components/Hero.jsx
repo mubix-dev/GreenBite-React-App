@@ -1,9 +1,10 @@
+import image from "../assets/Banner.jpg"
 function Hero() {
   return (
     <div className="relative w-full h-[70vh] md:h-[80vh]">
 
       <img
-        src='src\assets\Banner.jpg'
+        src={image}
         alt="Delicious Food"
         className="w-full h-full object-cover"
       />
