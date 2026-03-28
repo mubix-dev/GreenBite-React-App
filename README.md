@@ -46,6 +46,6 @@ GreenBite is a modern and responsive food ordering web application built using R
 - LinkedIn: https://www.linkedin.com/in/mubix-dev/
 
 ## ▶️ live Preview
-- https://www.linkedin.com/in/mubix-dev/
+- https://green-bite-react-app.vercel.app/
 
 ## ⭐ If you like this project, don't forget to star the repo!
