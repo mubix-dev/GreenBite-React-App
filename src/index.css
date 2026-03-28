@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme {
+  --color-GDark: #1B211A;
+  --color-GOlive: #AEB784;
+  --color-GSand: #E3DBBB;
+  --color-GCream: #F8F3E1;
+  --color-GMdGreen: #628141;
+  --color-GlightCream: #FCF9EA;
+
+}
