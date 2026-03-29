@@ -23,9 +23,12 @@ const cartSlice = createSlice({
         },
         decrementQty:function(state,action){
             return state.map((item)=>(item.id === action.payload && item.quantity>1 ? {...item,quantity:item.quantity-1}:item))
+        },
+        clearCart:function(){
+            return []
         }
     }
 })
 
-export const {addItem,removeItem,incrementQty,decrementQty} = cartSlice.actions
+export const {addItem,removeItem,incrementQty,decrementQty,clearCart} = cartSlice.actions
 export default cartSlice.reducer
