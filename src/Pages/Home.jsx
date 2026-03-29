@@ -10,6 +10,8 @@ import CartCard from "../components/CartCard";
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import Footer from "../components/Footer";
+import { useDispatch } from "react-redux";
+import { clearCart } from "../redux/cartSlice";
 
 export default function Home() {
   let { filteredItems, setFilteredItems, input, openCart, setOpenCart,itemsRef } =
@@ -38,6 +40,8 @@ export default function Home() {
   let deliveryFee = 150;
   let tax = parseFloat((subTotal * (0.5 / 100)).toFixed(2));
   let grandTotal = Math.floor(subTotal + deliveryFee + tax);
+
+  let dispatch = useDispatch()
 
   return (
     <div className="min-h-screen w-full ">
@@ -76,7 +80,7 @@ export default function Home() {
       >
         <header className=" w-full flex justify-between border-b-2 pb-2 border-GMdGreen ">
           <span className="font-semibold text-GMdGreen md:text-lg">
-            Shoping Cart
+            Shopping Cart
           </span>
           <X
             className="text-lg text-GMdGreen cursor-pointer hover:text-gray-500 md:text-2xl "
@@ -117,7 +121,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-        <button className="w-[80%] bg-GMdGreen px-2.5 mt-6 py-1.5 shadow-lg rounded-lg text-lg font-semibold cursor-pointer hover:bg-green-950 duration-200 text-white" onClick={()=>toast.success("Order Placed!")}>
+        <button className="w-[80%] bg-GMdGreen px-2.5 mt-6 py-1.5 shadow-lg rounded-lg text-lg font-semibold cursor-pointer hover:bg-green-950 duration-200 text-white" onClick={()=>(toast.success("Order Placed!"),dispatch(clearCart()))}>
           Checkout
         </button></> :<div className="text-xl text-amber-800 h-full flex flex-col justify-center">Your cart is empty</div> }
       </div>
