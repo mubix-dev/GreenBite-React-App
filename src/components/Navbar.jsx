@@ -61,9 +61,9 @@ function Navbar() {
         onClick={() => setOpenCart(true)}
       >
         <ShoppingCart className="text-GDark" />
-        <span className="absolute -right-2 -top-3 bg-amber-600 px-1.5 rounded-full text-white font-semiBold text-[15px]">
+        {items.length > 0 ?<span className="absolute -right-2 -top-3 bg-amber-600 px-1.5 rounded-full text-white font-semiBold text-[15px]">
           {items.length}
-        </span>
+        </span> :null}
       </div>
     </div>
   );
